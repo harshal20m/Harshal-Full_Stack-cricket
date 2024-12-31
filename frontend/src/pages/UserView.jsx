@@ -57,14 +57,17 @@ const UserView = () => {
 
 	return (
 		<div className="flex justify-center min-h-screen bg-gray-100 bg-gradient-to-r p-6">
-			<div className="max-w-lg w-full rounded-2xl bg-white p-6 mt-12 space-y-8">
+			<div className="max-w-xl w-full rounded-2xl bg-white p-6 mt-12 space-y-8">
 				<Header
 					runs={match.currentRuns}
 					wickets={match.currentWickets}
 					overs={match.currentOver}
 					nextBallIndex={getNextBallIndex()}
 				/>
-				<Animation action={action} />
+				<div className="mt-4">
+					{/* Add the animation container below the header */}
+					<Animation action={action} />
+				</div>
 				<OverList overs={overs} />
 			</div>
 		</div>

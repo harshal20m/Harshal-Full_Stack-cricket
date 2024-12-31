@@ -12,9 +12,9 @@ const Animation = ({ action }) => {
 	}, [action]);
 
 	return (
-		visible && (
-			<div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-opacity-50 bg-black">
-				<div className="text-white text-center text-2xl font-bold">
+		<div className="flex justify-center items-center bg-blue-50 p-4 rounded-md shadow-md">
+			{action && visible ? (
+				<div className="text-center text-lg font-bold">
 					{action.type === "wicket" ? "Wicket!" : `${action.value} Runs!`}
 					{action.value === 1 && <img src="/number1.gif" alt="1 Run" />}
 					{action.value === 2 && <img src="/number2.gif" alt="2 Runs" />}
@@ -23,8 +23,10 @@ const Animation = ({ action }) => {
 					{action.value === 6 && <img src="/number6.gif" alt="6 Runs" />}
 					{action.type === "wicket" && <img src="/wicket.gif" alt="Wicket" />}
 				</div>
-			</div>
-		)
+			) : (
+				<p className="text-gray-500 text-lg font-semibold">Match in Progress</p>
+			)}
+		</div>
 	);
 };
 
