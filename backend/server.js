@@ -34,15 +34,6 @@ app.use("/api/user", userRoutes);
 // Database Connection
 connectDB();
 
-// Socket.IO Connection
-io.on("connection", (socket) => {
-	console.log("Client connected:", socket.id);
-
-	socket.on("disconnect", () => {
-		console.log("Client disconnected:", socket.id);
-	});
-});
-
 // Start Server
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => {

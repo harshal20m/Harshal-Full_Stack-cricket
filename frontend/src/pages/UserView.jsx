@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Animation from "../components/Animation";
 import OverList from "../components/OverList";
 
-const socket = io("http://localhost:5000", {
+const socket = io("https://harshal-full-stack-cricket.onrender.com", {
 	reconnectionAttempts: 5,
 	reconnectionDelay: 1000,
 });
