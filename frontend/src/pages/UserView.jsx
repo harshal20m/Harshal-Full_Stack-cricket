@@ -56,8 +56,8 @@ const UserView = () => {
 	}, [match]);
 
 	return (
-		<div className="flex justify-center min-h-screen bg-gradient-to-r bg-gray-100 p-6">
-			<div className="max-w-lg w-full mt-12 space-y-8">
+		<div className="flex justify-center min-h-screen bg-gray-100 bg-gradient-to-r p-6">
+			<div className="max-w-lg w-full rounded-2xl bg-white p-6 mt-12 space-y-8">
 				<Header
 					runs={match.currentRuns}
 					wickets={match.currentWickets}
