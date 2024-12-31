@@ -54,8 +54,8 @@ const AdminView = () => {
 	}, [overs]);
 
 	return (
-		<div className="flex flex-col justify-center items-center  bg-gray-100">
-			<div className="bg-white shadow-lg rounded-lg p-6 mt-3 flex flex-col items-center max-w-xl w-full">
+		<div className="flex flex-col h-screen justify-center items-center  bg-gray-100">
+			<div className="bg-white  shadow-lg rounded-lg p-6 mt-3 flex flex-col items-center max-w-xl w-full">
 				<Header
 					runs={match.currentRuns}
 					wickets={match.currentWickets}
