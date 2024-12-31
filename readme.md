@@ -71,3 +71,4 @@ npm start
 
 The frontend will be available at `http://localhost:5173`
 The backend will be available at `http://localhost:5000`
+.
