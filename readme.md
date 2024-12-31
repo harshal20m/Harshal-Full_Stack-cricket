@@ -61,7 +61,7 @@ PORT=5000
 npm run dev
 
 # Backend (in /backend directory)
-npm run dev
+npm start
 ```
 
 The frontend will be available at `http://localhost:5173`
